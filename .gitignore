@@ -1,0 +1,15 @@
+# Virtual Enviorment
+.venv/
+venv/
+env/
+
+# Locals settings
+.env
+
+# System File
+__pycache__/
+*.py[cod]
+*.log
+
+# Data
+*.pdf
