@@ -201,6 +201,18 @@ If you're interested in this project:
 * Open an issue
 * Connect via GitHub
 
+## License
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## Author
+_**Luca D'Alessandro**_
+
+*Mathematical Sciences for AI Student, Sapienza University of Rome*
+
+Passionate about Artificial Intelligence and building tools to solve real-world problems.
+* **[GitHub](https://github.com/luca-dalessandro)**
+* **[LinkedIn](https://www.linkedin.com/in/luca-d-alessandro-904o13d4/)**
+
 ---
 
 <p align="center">

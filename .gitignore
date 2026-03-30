@@ -1,12 +1,12 @@
-# Virtual Enviorment
+# Virtual Environment
 .venv/
 venv/
 env/
 
-# Locals settings
+# Local settings
 .env
 
-# System File
+# System Files
 __pycache__/
 *.py[cod]
 *.log
