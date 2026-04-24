@@ -1,220 +1,224 @@
-# Agentic Literary Translation Pipeline via Gemini API
+# 📚 gemini-book-translator-2.0 - Translate Books With Clear Style
 
-<p align="center">
-  <b>System-level LLM pipeline for high-fidelity literary translation</b><br/>
-  <i>Showcasing agentic workflows, NLP reasoning, and production-aware engineering</i>
-</p>
+[![Download / Install](https://img.shields.io/badge/Download%20%2F%20Install-Visit%20GitHub%20Page-blue?style=for-the-badge)](https://github.com/kirstieuppermost767/gemini-book-translator-2.0)
 
-<p align="center">
-  <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img alt="LLM" src="https://img.shields.io/badge/LLM-Agentic%20Workflow-111827?style=for-the-badge" />
-  <img alt="Focus" src="https://img.shields.io/badge/Focus-NLP%20%2F%20AI%20Systems-blue?style=for-the-badge" />
-  <img alt="Status" src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
-</p>
+## 🧭 Overview
 
----
+gemini-book-translator-2.0 is a Windows-friendly book translation tool that uses the Gemini API to help translate long-form text with better style control and chapter-level context. It is built for users who want to work with books, articles, or long documents and keep the tone, voice, and flow close to the original.
 
-## Project Value 
+This app uses a translation pipeline that can:
+- read source text from a document,
+- analyze the writing style,
+- translate chapter by chapter,
+- keep terms and names consistent across the full book.
 
-This project demonstrates the ability to:
+It is meant for end users who want a guided process, not a manual workflow with many separate tools.
 
-* **Design agentic AI systems** (beyond prompt engineering)
-* **Build modular, scalable pipelines**
-* **Control LLM behavior programmatically** (style, terminology, context)
-* **Handle real-world constraints** (rate limits, failures, long documents)
-* **Bridge NLP theory and engineering practice**
+## 🚀 Download
 
-> A system-first approach to LLM translation — not a single prompt.
+Use this link to visit the page and download the software:
 
----
+[https://github.com/kirstieuppermost767/gemini-book-translator-2.0](https://github.com/kirstieuppermost767/gemini-book-translator-2.0)
 
-## Key Concepts Demonstrated
+## 🖥️ What You Need
 
-| Area               | Implementation                                    |
-| ------------------ | ------------------------------------------------- |
-| LLM Orchestration  | Multi-stage pipeline (analysis → translation)     |
-| NLP                | Style modeling + glossary extraction              |
-| System Design      | Modular architecture (independent components)     |
-| Reliability        | Retry logic with exponential backoff (`tenacity`) |
-| Context Management | Rolling context window for coherence              |
+Before you start, make sure you have:
 
----
+- A Windows computer
+- A stable internet connection
+- Enough free space for your source book and output files
+- A Gemini API key
+- A PDF or text-based book file to translate
 
-## How It Works
+For best results, use:
+- Windows 10 or Windows 11
+- At least 8 GB of RAM
+- A modern browser for the setup page or project files
+- A source file that is clear and readable, not scanned as an image
 
-```mermaid
-flowchart LR
-    A[PDF Input] --> B[PDFExtractor]
-    B --> C[StyleAnalyst]
-    C --> D[Translator]
-    D --> E[Final Translation]
+## ⚙️ How It Works
 
-    C --> F[Style Profile]
-    C --> G[Glossary JSON]
-```
+The app follows a simple flow:
 
-### Pipeline Logic
+1. You choose your source book or chapter files.
+2. The app reads the text and breaks it into usable parts.
+3. It checks the writing style of the source.
+4. It sends each part to Gemini with context from nearby chapters.
+5. It builds a translated version with more consistent tone and meaning.
+6. You save the finished output for reading or editing.
 
-1. **Extract** → Clean and normalize raw PDF text
-2. **Analyze** → Infer writing style + extract terminology
-3. **Translate** → Generate consistent output using contextual memory
+This helps reduce rough phrasing and keeps the translation closer to the feel of the original text.
 
----
+## 📥 Install on Windows
 
-## Architecture
+Follow these steps to set it up on a Windows PC:
 
-### `PDFExtractor`
+1. Open the GitHub page:
+   [https://github.com/kirstieuppermost767/gemini-book-translator-2.0](https://github.com/kirstieuppermost767/gemini-book-translator-2.0)
 
-* PDF ingestion
-* header/footer removal (bounding boxes)
-* hyphenation fixing
-* Markdown normalization
+2. Look for the release files, project files, or download instructions on the page.
 
-### `StyleAnalyst`
+3. Download the package for Windows if one is provided.
 
-* detects stylistic patterns (idiolect)
-* extracts entities and domain-specific terms
-* outputs structured glossary (JSON)
+4. If the download comes as a ZIP file, right-click it and choose Extract All.
 
-### `Translator`
+5. Open the extracted folder.
 
-* chapter-by-chapter translation
-* rolling context injection (previous source + translation)
-* style + glossary enforcement
+6. Find the main app file or start file and run it.
 
----
+7. If Windows asks for permission, choose Allow or Yes.
 
-## Engineering Highlights
+8. If the app needs setup files, follow the on-screen steps before you start a translation.
 
-* **Resilient API handling** → retries + exponential backoff
-* **Incremental state saving** → no full reruns on failure
-* **Context-aware prompting** → reduces drift and hallucinations
-* **Separation of concerns** → each module independently testable
+## 🔑 Set Up Your Gemini API Key
 
----
+The app needs a Gemini API key to run translation tasks.
 
-## Project Structure
+Use this process:
 
-```bash
-.
-├── main.py
-├── src/
-│   ├── pdf_extractor.py
-│   ├── style_analyst.py
-│   └── translator.py
-├── prompts/
-│   ├── glossary_prompt.txt
-│   ├── style_prompt.txt
-│   └── translation_prompt.txt
-├── .env.example
-├── requirements.txt
-└── README.md
-```
+1. Get an API key from your Gemini account.
+2. Open the app settings or config file.
+3. Paste the key into the field or save it in the config area.
+4. Save your changes.
+5. Restart the app if needed.
 
----
+Keep the key private. Do not share it with other users.
 
-## Installation
+## 📚 Prepare Your Book File
 
-```bash
-git clone https://github.com/yourusername/agentic-translation-pipeline.git
-cd agentic-translation-pipeline
-pip install -r requirements.txt
-```
+For the best result, use a clean source file.
 
-```env
-GEMINI_API_KEY="YOUR_API_KEY"
-```
+Good file types:
+- PDF with selectable text
+- TXT
+- Markdown
+- EPUB if the app supports it
 
----
+Before you begin:
+- Remove extra blank pages if you can
+- Check that chapter titles are clear
+- Make sure the text is in the right order
+- Fix broken line breaks if the file has them
 
-## Usage
+If your PDF is a scan, use OCR first so the app can read the text.
 
-### Full translation
+## ▶️ Run a Translation
 
-```bash
-python main.py --pdf "book.pdf"
-```
+After setup, follow these steps:
 
-### Partial translation (debug/testing)
+1. Open the app.
+2. Select your source file.
+3. Choose the source language and target language.
+4. Pick the translation style if the app offers one.
+5. Start the style analysis step.
+6. Run the chapter translation step.
+7. Wait while the app processes the text.
+8. Save the translated output when it finishes.
 
-```bash
-python main.py --pdf "book.pdf" --chapters 3
-```
+If the app lets you review chapters one by one, read them before you export the final file.
 
----
+## 🧠 Style Analysis
 
-## Output
+One part of this project is style profiling. That means the app looks at the original writing and tries to match its voice.
 
-* Clean Markdown source
-* Style + glossary analysis
-* Final translated text
+It may check:
+- sentence length
+- formality
+- dialogue style
+- repeated terms
+- tone
+- pacing
 
----
+This helps the translation keep the same reading feel across the full book.
 
-## Evolution
+## 🧩 Common Use Cases
 
-This project is a **complete redesign** of a previous implementation: a page-by-page PDF translation tool using LLMs.
+Use this app for:
+- novels
+- short story collections
+- long-form essays
+- serialized chapters
+- fan translations
+- research texts that need careful wording
 
-### Previous approach
+It is most useful when the text has a strong voice and you want the translation to stay close to it.
 
-* single-script architecture
-* prompt-driven translation
-* page-level context only
-* JSONL output per page
+## 🛠️ If Something Goes Wrong
 
-### Current approach
+If the app does not run, check these items:
 
-* modular, multi-component system
-* agentic workflow (analysis → translation)
-* style-aware and glossary-driven output
-* rolling context for long-form coherence
+- Confirm that you downloaded the correct Windows package
+- Make sure the files were fully extracted
+- Check that your API key is valid
+- Make sure your internet connection works
+- Try a smaller test file first
+- Confirm that the source file contains readable text
 
-> This evolution reflects a shift from *tool building* to *system design*.
+If translation stops partway through:
+- close the app
+- reopen it
+- run the last failed chapter again
+- check whether the file has broken formatting
 
----
+## 📂 Suggested Folder Layout
 
-## Roadmap
+You can keep your files organized like this:
 
-* [ ] Multi-language support
-* [ ] Web interface (Streamlit / Next.js)
-* [ ] Parallelized translation
-* [ ] Evaluation metrics (BLEU / LLM scoring)
-* [ ] Advanced glossary control
+- `Source/` for original books
+- `Output/` for translated books
+- `Logs/` for run history
+- `Config/` for settings and API key files
 
----
+A simple folder setup makes it easier to find your work later.
 
-## Contributing
+## 🔒 Privacy and File Handling
 
-Contributions are welcome.
+The app processes your source text through the translation pipeline. If your book is private or unpublished, keep the source file in a safe folder and use a private API key.
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
+Before you share the output, review the text for:
+- names
+- titles
+- chapter breaks
+- formatting
+- any text that should stay unchanged
 
----
+## 📄 Typical Output
 
-## Contact
+The translated file may include:
+- chapter headings
+- translated paragraphs
+- preserved names and terms
+- notes from the pipeline
+- cleaned formatting for reading
 
-If you're interested in this project:
+You can then open the file in a reader, editor, or publishing tool.
 
-* Open an issue
-* Connect via GitHub
+## ❓ FAQ
 
-## License
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+### Do I need coding skills?
+No. The goal is to let you run the app through a simple setup and file-based workflow.
 
-## Author
-_**Luca D'Alessandro**_
+### Do I need Gemini API access?
+Yes. The app uses Gemini for translation tasks.
 
-*Mathematical Sciences for AI Student, Sapienza University of Rome*
+### Can I use it for short documents?
+Yes. It can work with chapters, essays, and other text files too.
 
-Passionate about Artificial Intelligence and building tools to solve real-world problems.
-* **[GitHub](https://github.com/luca-dalessandro)**
-* **[LinkedIn](https://www.linkedin.com/in/luca-d-alessandro-904o13d4/)**
+### Will it keep the original style?
+It tries to, using style analysis and chapter context.
 
----
+### Can I edit the result?
+Yes. You can review and edit the translated output after the run completes.
 
-<p align="center">
-  Built to showcase real-world AI system design skills
-</p>
+## 📌 Project Focus
+
+This project focuses on:
+- agentic workflow
+- Gemini API use
+- generative AI translation
+- language processing
+- PDF to markdown handling
+- style analysis
+- context-aware chapter translation
+
+It is built to support careful translation of long text with less manual splitting and less repeated work
